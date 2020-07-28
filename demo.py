@@ -20,7 +20,6 @@ def setup_cfg(args):
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file(args.config_file))
     cfg.merge_from_list(args.opts)
-    # cfg.MODEL.WEIGHTS = args.weights
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
     # Set score_threshold for builtin models
     cfg.MODEL.RETINANET.SCORE_THRESH_TEST = args.confidence_threshold
@@ -49,7 +48,6 @@ def get_parser():
         default=0.5,
         help="Minimum score for instance predictions to be shown",
     )
-    # parser.add_argument("--weights", help="Path to weights.")
     parser.add_argument(
         "--opts",
         help="Modify config options using the command-line 'KEY VALUE' pairs",
