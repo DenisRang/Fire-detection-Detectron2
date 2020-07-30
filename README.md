@@ -16,4 +16,4 @@ It obtains the best speed/accuracy tradeoff.
 ![](demo.gif)
 
 ## Getting Started   
-The easiest way to repeat the whole experiment you should run [workflow.ipynb](workflow.ipynb]) in Google Colab.
+The easiest way to repeat the whole experiment is to run [workflow.ipynb](workflow.ipynb]) in Google Colab.
